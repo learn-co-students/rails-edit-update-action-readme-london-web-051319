@@ -1,2 +1,8 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.description %></p>
+
+<p><%= link_to 'Click here', edit_article_path %> to edit the listing for this article.</p>
+
+<p>If you would like to delete this article, click the button below.</p>
+
+<%= button_to 'Delete', @article, :method => :delete %>
