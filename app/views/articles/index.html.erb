@@ -1,3 +1,5 @@
+<h1>All Articles</h1>
+
 <% @articles.each do |article| %>
-  <div><%= article.title %></div>
+  <div><%= article.title %> &emsp; <%= link_to 'View Article', article_path(article) %></div> <br><br>
 <% end %>
